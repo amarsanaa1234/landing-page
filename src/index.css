@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,123 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.header{
+  background-image: url('./img/header.png');
+}
+.section_text{
+  @apply mb-[70px] ml-20 text-xl;
+}
+.section_title{
+  @apply text-8xl  ;
+}
+.section_div{
+  @apply border-b-2  flex items-end;
+}
+.trending{
+  background-image: url("./img/section_bg.png");
+}
+.treasures{
+  background-image: url("./img/Rectangle\ 53.png");
+}
+.mail_back{
+  background-image: url("./img/Rectangle\ 56.png");
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-position: bottom;
+  background-size: cover
+}
+.frame{
+  @apply w-5/6 gap-10 flex flex-wrap justify-center items-center text-white mb-20;
+}
+.trending_section{
+  @apply rounded-md bg-gradient-to-r from-green-500 via-purple-500 to-blue-400 p-1 w-[300px] h-[32rem] text-white;
+}
+.readBtn{
+  @apply text-2xl font-bold text-white w-60 h-20 m-20 bg-[#BD24E6] rounded-2xl;
+}
+.back{
+  background-image: url("./img/Rectangle\ 54.png");
+  background-size: cover;
+  color: white;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+  flex-direction: column;
+}
+.title{
+  @apply text-[38px] font-bold mt-[5rem] text-white
+}
+.wallet-box{
+  @apply w-[400px] h-[400px] flex flex-col justify-center gap-4 items-center border-2 rounded-xl border-green-500 bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-gray-900 via-purple-900 to-violet-600
+}
+.wallet-icon{
+  @apply text-5xl
+}
+.wallet-title{
+  @apply text-[20px] font-bold
+}
+.wallet-text{
+  @apply text-[18px] text-center w-[300px]
+}
+.frame-slide{
+  width: 100% !important;
+}
+.swiper-slide{
+  width: 320px !important;
+  height: 430px !important;
+}
+.company_back{
+  background-image: url("./img/Rectangle\ 57.png");
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+.tranding-slide-content{
+  @apply relative
+}
+.myswiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.slider_slide{
+  @apply bg-gray-600 rounded-xl w-[320px] h-[430px];
+}
+.group_box{
+  border-radius: 5px;
+  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+}
+.slide-slide{
+  width: 300px !important;
+  height: 150px !important;
+}
+.footer-title{
+  @apply font-bold text-[20px]
+}
+.footer_menu{
+  @apply flex flex-col gap-2
+}
+.footer_icons{
+  @apply w-8 h-8 rounded-md flex justify-center items-center bg-gradient-to-r from-slate-900 to-slate-700
+}
+
+.price_btn{
+  @apply w-24 h-9 rounded-md bg-[#00031A] text-[14px] font-bold;
+}
+.layout_frame{
+  @apply p-5 rounded-xl max-w-[600px] w-full fixed top-[40%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex bg-gradient-to-r from-violet-600 to-indigo-600 drop-shadow-[100px]
 }
